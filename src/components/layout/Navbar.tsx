@@ -45,7 +45,7 @@ export default function Navbar() {
               <span className="text-black font-bold text-sm font-[family-name:var(--font-heading)]">N</span>
             </div>
             <span className="text-white font-semibold text-lg tracking-tight font-[family-name:var(--font-heading)]">
-              Nexovian Digital<span className="text-[#00d4ff]">.</span>
+              NexovianDigital<span className="text-[#00d4ff]">.</span>
             </span>
           </Link>
 

@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 /* ============================================
-   ROOT LAYOUT — Nexovian Digital
+   ROOT LAYOUT — NexovianDigital
    SEO-optimized metadata + global providers
    ============================================ */
 
 export const metadata: Metadata = {
   title: {
-    default: "Nexovian Digital | AI-Powered Digital Agency",
-    template: "%s | Nexovian Digital",
+    default: "NexovianDigital | AI-Powered Digital Agency",
+    template: "%s | NexovianDigital",
   },
   description:
     "Elite AI-powered digital agency specializing in web development, SEO, AI automation, and data analytics. We engineer intelligent digital ecosystems for high-growth companies.",
@@ -24,20 +24,20 @@ export const metadata: Metadata = {
     "AI chatbots",
     "enterprise web development",
   ],
-  authors: [{ name: "Nexovian Digital" }],
-  creator: "Nexovian Digital",
+  authors: [{ name: "NexovianDigital" }],
+  creator: "NexovianDigital",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://nexoviandigital.agency",
-    siteName: "Nexovian Digital",
-    title: "Nexovian Digital | AI-Powered Digital Agency",
+    siteName: "NexovianDigital",
+    title: "NexovianDigital | AI-Powered Digital Agency",
     description:
       "We engineer intelligent digital ecosystems. Web Development, SEO, AI Automation & Data Analytics.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nexovian Digital | AI-Powered Digital Agency",
+    title: "NexovianDigital | AI-Powered Digital Agency",
     description:
       "We engineer intelligent digital ecosystems. Web Development, SEO, AI Automation & Data Analytics.",
   },

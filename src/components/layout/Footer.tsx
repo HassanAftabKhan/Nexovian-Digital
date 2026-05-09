@@ -30,7 +30,7 @@ export default function Footer() {
                 <span className="text-black font-bold text-sm font-[family-name:var(--font-heading)]">N</span>
               </div>
               <span className="text-white font-semibold text-lg tracking-tight font-[family-name:var(--font-heading)]">
-                Nexovian Digital<span className="text-[#00d4ff]">.</span>
+                NexovianDigital<span className="text-[#00d4ff]">.</span>
               </span>
             </Link>
             <p className="text-[#6b7280] text-sm leading-relaxed max-w-sm mb-6">
@@ -95,7 +95,7 @@ export default function Footer() {
           className="mt-16 pt-8 border-t border-white/[0.04] flex flex-col md:flex-row items-center justify-between gap-4"
         >
           <p className="text-[#6b7280] text-xs">
-            © {new Date().getFullYear()} Nexovian Digital. All rights reserved.
+            © {new Date().getFullYear()} NexovianDigital. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <Link href="/privacy" className="text-[#6b7280] hover:text-white text-xs transition-colors">

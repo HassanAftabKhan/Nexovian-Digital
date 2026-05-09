@@ -5,7 +5,7 @@ import ContactPageContent from "./ContactPageContent";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Start your project with Nexovian Digital. Book a free architecture review and discover how AI can transform your business.",
+  description: "Start your project with NexovianDigital. Book a free architecture review and discover how AI can transform your business.",
 };
 
 export default function ContactPage() {

@@ -5,7 +5,7 @@ import AboutPageContent from "./AboutPageContent";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "Meet the engineering team behind Nexovian Digital — architects of intelligent digital ecosystems.",
+  description: "Meet the engineering team behind NexovianDigital — architects of intelligent digital ecosystems.",
 };
 
 export default function AboutPage() {

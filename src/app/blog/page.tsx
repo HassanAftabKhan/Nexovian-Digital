@@ -5,7 +5,7 @@ import BlogPageContent from "./BlogPageContent";
 
 export const metadata: Metadata = {
   title: "Blog",
-  description: "Insights on AI automation, web development, SEO strategy, and data analytics from the Nexovian Digital engineering team.",
+  description: "Insights on AI automation, web development, SEO strategy, and data analytics from the NexovianDigital engineering team.",
 };
 
 export default function BlogPage() {

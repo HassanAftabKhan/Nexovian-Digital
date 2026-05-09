@@ -65,7 +65,7 @@ export const STATS = [
 
 export const TESTIMONIALS = [
   {
-    quote: "Nexovian Digital didn't just build our website — they engineered an entire digital ecosystem that automated 70% of our operations.",
+    quote: "NexovianDigital didn't just build our website — they engineered an entire digital ecosystem that automated 70% of our operations.",
     author: "Sarah Chen",
     role: "CEO, TechScale Inc.",
     avatar: "SC",
@@ -121,7 +121,7 @@ export const PORTFOLIO_ITEMS = [
 
 export const FAQS = [
   {
-    question: "What makes Nexovian Digital different from other agencies?",
+    question: "What makes NexovianDigital different from other agencies?",
     answer: "We don't just design — we engineer. Every project is built with AI-powered automation, enterprise-grade architecture, and data-driven strategy. We're a technology company that happens to offer agency services.",
   },
   {
