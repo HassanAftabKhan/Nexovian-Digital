@@ -54,13 +54,14 @@ export default function TechStackSection() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.03 }}
-              whileHover={{ y: -4, borderColor: "rgba(0, 212, 255, 0.3)" }}
-              className="px-5 py-3 rounded-xl border border-white/[0.06] bg-white/[0.02] hover:bg-white/[0.04] transition-all duration-300 cursor-default group"
+              whileHover={{ y: -4, borderColor: "rgba(0, 212, 255, 0.4)" }}
+              className="px-6 py-4 rounded-xl border border-white/[0.08] bg-white/[0.02] hover:bg-[#00d4ff]/[0.05] transition-all duration-300 cursor-default group hover:shadow-[0_0_20px_rgba(0,212,255,0.15)] relative overflow-hidden"
             >
-              <span className="text-sm font-medium text-[#d1d5db] group-hover:text-white transition-colors">
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/[0.05] to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
+              <span className="text-sm font-semibold text-[#d1d5db] group-hover:text-white transition-colors relative z-10">
                 {tech.name}
               </span>
-              <span className="text-[9px] text-[#6b7280] block font-[family-name:var(--font-mono)] uppercase tracking-wider mt-0.5">
+              <span className="text-[10px] text-[#6b7280] block font-[family-name:var(--font-mono)] uppercase tracking-[0.15em] mt-1 relative z-10 group-hover:text-[#00d4ff]/80 transition-colors">
                 {tech.category}
               </span>
             </motion.div>

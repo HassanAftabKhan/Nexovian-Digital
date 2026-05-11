@@ -42,7 +42,7 @@ export default function HeroSection() {
         >
           <span className="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.6)] animate-pulse" />
           <span className="text-xs text-[#9ca3af] font-medium font-[family-name:var(--font-mono)]">
-            AI Systems Online — Accepting New Projects
+            System Online — Scalable Architectures Available
           </span>
         </motion.div>
 
@@ -53,10 +53,10 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
           className="text-display max-w-5xl mx-auto mb-6"
         >
-          We Engineer{" "}
+          We Architect{" "}
           <span className="text-gradient">Intelligent</span>
           <br />
-          Digital Ecosystems
+          Enterprise Ecosystems
         </motion.h1>
 
         {/* Subheadline */}
@@ -66,8 +66,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
           className="text-body-lg max-w-2xl mx-auto mb-10"
         >
-          AI-powered web development, SEO, automation, and analytics.
-          We don&apos;t just build — we architect systems that scale, learn, and evolve.
+          Empowering global brands with AI-driven automation, high-performance web platforms, predictive SEO, and data analytics. We don&apos;t just build — we engineer autonomous growth.
         </motion.p>
 
         {/* CTAs */}
@@ -81,10 +80,10 @@ export default function HeroSection() {
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
             </svg>
-            Deploy Your Project
+            Deploy Infrastructure
           </Link>
           <Link href="/portfolio" className="btn-secondary" id="hero-cta-secondary">
-            View Deployments
+            Explore Case Studies
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>

@@ -33,29 +33,29 @@ export default function FAQSection() {
           {FAQS.map((faq, i) => (
             <div
               key={i}
-              className={`glass-panel overflow-hidden transition-all duration-500 ${
-                openIndex === i ? "border-[#00d4ff]/20" : ""
+              className={`glass-panel overflow-hidden transition-all duration-500 hover:border-white/[0.1] hover:bg-white/[0.04] ${
+                openIndex === i ? "border-[#00d4ff]/30 shadow-[0_0_30px_rgba(0,212,255,0.05)] bg-white/[0.03]" : ""
               }`}
             >
               <button
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                className="w-full flex items-center justify-between px-6 py-5 text-left"
+                className="w-full flex items-center justify-between px-8 py-6 text-left group"
                 id={`faq-toggle-${i}`}
               >
-                <span className="text-sm font-medium text-white pr-4">{faq.question}</span>
-                <motion.svg
-                  animate={{ rotate: openIndex === i ? 45 : 0 }}
-                  transition={{ duration: 0.3 }}
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  className="text-[#6b7280] shrink-0"
+                <span className={`text-base font-medium transition-colors duration-300 pr-4 ${openIndex === i ? "text-[#00d4ff]" : "text-white group-hover:text-[#00d4ff]/80"}`}>
+                  {faq.question}
+                </span>
+                <motion.div
+                  animate={{ rotate: openIndex === i ? 135 : 0 }}
+                  transition={{ duration: 0.4, ease: "backOut" }}
+                  className={`w-8 h-8 rounded-full border flex items-center justify-center shrink-0 transition-colors duration-300 ${
+                    openIndex === i ? "border-[#00d4ff]/40 bg-[#00d4ff]/10 text-[#00d4ff]" : "border-white/10 text-[#6b7280] group-hover:border-white/20"
+                  }`}
                 >
-                  <path d="M12 5v14M5 12h14" />
-                </motion.svg>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M12 5v14M5 12h14" />
+                  </svg>
+                </motion.div>
               </button>
 
               <AnimatePresence>

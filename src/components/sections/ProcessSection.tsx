@@ -12,8 +12,8 @@ import SectionHeading from "@/components/ui/SectionHeading";
 const STEPS = [
   {
     number: "01",
-    title: "Discovery & Architecture",
-    description: "We deep-dive into your business, audit existing systems, and design a technical blueprint tailored to your growth objectives.",
+    title: "Systems Architecture & Discovery",
+    description: "We conduct a comprehensive audit of your existing infrastructure, identifying bottlenecks and engineering a custom blueprint for scalable growth.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <circle cx="12" cy="12" r="10" /><path d="M12 16v-4M12 8h.01" />
@@ -22,8 +22,8 @@ const STEPS = [
   },
   {
     number: "02",
-    title: "Sprint-Based Development",
-    description: "Our engineering team builds in rapid 2-week sprints with continuous demos, ensuring transparency and velocity at every stage.",
+    title: "Agile Engineering Sprints",
+    description: "Our elite development team executes the blueprint through high-velocity sprints, ensuring maximum transparency, security, and rapid time-to-value.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
@@ -32,8 +32,8 @@ const STEPS = [
   },
   {
     number: "03",
-    title: "AI Integration & Automation",
-    description: "We deploy intelligent agents, connect your tools via Zapier/Make, and automate repetitive workflows to save 40+ hours per week.",
+    title: "Neural Integration & Automation",
+    description: "We embed custom AI agents and automate complex workflows across your stack, drastically reducing operational overhead and eliminating human error.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <rect x="4" y="4" width="16" height="16" rx="2" /><rect x="9" y="9" width="6" height="6" />
@@ -43,8 +43,8 @@ const STEPS = [
   },
   {
     number: "04",
-    title: "Launch & Scale",
-    description: "We deploy to production, activate monitoring, and transition into a growth retainer — continuously optimizing performance and ROI.",
+    title: "Deployment & Autonomous Scaling",
+    description: "Post-launch, we activate continuous monitoring, AI model fine-tuning, and infrastructure scaling to guarantee peak performance 24/7.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" />
