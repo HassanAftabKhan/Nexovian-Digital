@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { staggerContainer, staggerItem, defaultViewport } from "@/lib/animations";
 import SectionHeading from "@/components/ui/SectionHeading";
 import CTASection from "@/components/sections/CTASection";
+import QuerySection from "@/components/sections/QuerySection";
 
 /* ============================================
    ABOUT PAGE CONTENT
@@ -26,7 +27,7 @@ const TEAM = [
   { 
     name: "Hassan Aftab", 
     role: "Co-founder & CMO", 
-    image: null,
+    image: "/profile photos/hassan profile.jpeg",
     bio: "Growth strategist focused on market expansion and brand development."
   },
 ];
@@ -198,6 +199,8 @@ export default function AboutPageContent() {
           </motion.div>
         </div>
       </section>
+
+      <QuerySection />
 
       <CTASection />
     </>
