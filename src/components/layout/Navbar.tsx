@@ -43,7 +43,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group" id="navbar-logo">
             <Image
-              src="/nexoviandigital logo.svg"
+              src="/nexoviandigital.png"
               alt="NexovianDigital Logo"
               width={75}
               height={75}
