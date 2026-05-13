@@ -2,7 +2,21 @@ import { Resend } from "resend";
 import { NextRequest, NextResponse } from "next/server";
 import { getSupabaseAdmin } from "@/lib/supabase-admin";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+let resendClient: Resend | null = null;
+
+function getResend() {
+  if (resendClient) {
+    return resendClient;
+  }
+
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) {
+    throw new Error("Missing RESEND_API_KEY environment variable");
+  }
+
+  resendClient = new Resend(apiKey);
+  return resendClient;
+}
 
 interface QueryRequest {
   name: string;
@@ -61,21 +75,30 @@ export async function POST(request: NextRequest) {
     }
 
     // Send email to company inbox
-    const companyEmailResult = await resend.emails.send({
-      from: "onboard@resend.dev",
-      to: "blackwatch4321@gmail.com",
-      subject: `New Query from ${body.name}`,
-      html: `
-        <h2>New Query Received</h2>
-        <p><strong>From:</strong> ${body.name}</p>
-        <p><strong>Email:</strong> ${body.email}</p>
-        <p><strong>Message:</strong></p>
-        <p>${body.message.replace(/\n/g, "<br />")}</p>
-      `,
-    });
+    try {
+      const resend = getResend();
+      const companyEmailResult = await resend.emails.send({
+        from: "onboard@resend.dev",
+        to: "blackwatch4321@gmail.com",
+        subject: `New Query from ${body.name}`,
+        html: `
+          <h2>New Query Received</h2>
+          <p><strong>From:</strong> ${body.name}</p>
+          <p><strong>Email:</strong> ${body.email}</p>
+          <p><strong>Message:</strong></p>
+          <p>${body.message.replace(/\n/g, "<br />")}</p>
+        `,
+      });
 
-    if (companyEmailResult.error) {
-      console.error("Error sending company email:", companyEmailResult.error);
+      if (companyEmailResult.error) {
+        console.error("Error sending company email:", companyEmailResult.error);
+        return NextResponse.json(
+          { message: "Failed to send query. Please try again." },
+          { status: 500 }
+        );
+      }
+    } catch (resendError) {
+      console.error("Error with Resend:", resendError);
       return NextResponse.json(
         { message: "Failed to send query. Please try again." },
         { status: 500 }
