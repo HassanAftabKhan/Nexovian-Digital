@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { staggerContainer, staggerItem, defaultViewport } from "@/lib/animations";
 import SectionHeading from "@/components/ui/SectionHeading";
 import CTASection from "@/components/sections/CTASection";
-import QuerySection from "@/components/sections/QuerySection";
 
 /* ============================================
    ABOUT PAGE CONTENT
@@ -199,8 +198,6 @@ export default function AboutPageContent() {
           </motion.div>
         </div>
       </section>
-
-      <QuerySection />
 
       <CTASection />
     </>

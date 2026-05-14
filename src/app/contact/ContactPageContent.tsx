@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { defaultViewport } from "@/lib/animations";
+import QuerySection from "@/components/sections/QuerySection";
 
 /* ============================================
    CONTACT PAGE CONTENT — Multi-step form
@@ -240,6 +241,9 @@ export default function ContactPageContent() {
           </motion.div>
         </div>
       </section>
+
+      {/* Query Section */}
+      <QuerySection />
     </>
   );
 }
